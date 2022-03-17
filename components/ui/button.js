@@ -10,7 +10,7 @@ const Button = (props) => {
     );
   }
   return (
-    <button className={classes.btn} onClick={props.onClick}>
+    <button type="submit" className={classes.btn} onClick={props.onClick}>
       {props.children}
     </button>
   );
