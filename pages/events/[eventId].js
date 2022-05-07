@@ -10,7 +10,6 @@ const EventId = () => {
   const route = useRouter();
   const eventId = route.query.eventId;
   const event = getEventById(eventId);
-  console.log(event, "event..");
   if (!event) {
     <p>No Event Found!</p>;
   }

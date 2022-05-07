@@ -9,8 +9,7 @@ const AllEventPage = () => {
   const events = getAllEvents();
 
   const findEventHandler = (years, month) => {
-    console.log(years, month);
-    const fullPath = `/events/${month}/${year}`;
+    const fullPath = `/events/${month}/${years}`;
     router.push(fullPath);
   };
   return (
